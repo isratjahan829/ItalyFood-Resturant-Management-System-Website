@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>zItalyFood | Free Restaurant Html5 Templates</title>
+	<meta name="description" content="Free Responsive Html5 Css3 Templates | zerotheme.com">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slide.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+		<style>
+			body {
+    background-image: url('images/backgroung.jpg');
+    background-size: cover; /* This ensures the background image covers the entire screen */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+#container .wrap-container{background: #ffffff;height: 1500px;}
+
+			body .card {
+      height: 40vw;
+    width: 35vw;
+    background-color: #5b5b5b;
+    margin-left: 13vw;
+    margin-top: 5vw;
+    box-shadow: 2vw 2vw 12vw 3vw #ccc;
+}
+
+.zoom-effect:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(3.5); 
+}
+
+/* Styling for the overlay */
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the pop-up image */
+#popup-image {
+  max-width: 80%;
+  max-height: 80%;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  box-shadow: 2vw 2vw 12vw 3vw #ccc;
+  position: relative;
+}
+
+/* Styling for the close button */
+#close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+/* Additional styling for the popup content */
+#popup-image img {
+      width: 699px;
+    height: 500px;
+    object-fit: fill;
+}
+
+		</style>
+   
+</head>
+<body>
+
+
+<div class="wrap-body">
+	<!--///////////////////////////////////////Top-->
+	<div class="top">
+		<div class="zerogrid">
+			<ul class="number f-left">
+				<li class="mail"><p>ContacUst@Gmail.com</p></li>
+				<li class="phone"><p>08 88888 88888</p></li>
+			</ul>
+			<ul class="top-social f-right">
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				
+			</ul>
+		</div>
+	</div>
+	<!--////////////////////////////////////Header-->
+	<header>
+		<div class="zerogrid">
+			<center><div class="logo"><img src="images/logo.png"></div></center>
+		</div>
+	</header>
+	<div class="site-title">
+		<div class="zerogrid">
+			<div class="row">
+			
+			</div>
+		</div>
+	</div>
+    <!--Menu-->
+    <a href="#" class="nav-toggle">Toggle Navigation</a>
+    <nav class="cmn-tile-nav">
+		<ul class="clearfix">
+			<li class="colour-1"><a href="index.html">Home</a></li>
+			<li class="colour-2"><a href="menu.html">Menu</a></li>
+			<li class="colour-4"><a href="archive.html">Blog</a></li>
+			<li class="colour-6"><a href="staff.html">CHRFS</a></li>
+			<li class="colour-7"><a href="Recepis.html">Recipes</a></li>
+			<li class="colour-3"><a href="hygin.html">Hygine Maintainence</a></li>
+			<li class="colour-3"><a href="location.html">Location</a></li>
+			<li class="colour-8"><a href="gallery.html">Gallery</a></li>
+		</ul>
+    </nav>
+	
+<!--Container-->
+<section id="container" class="sub-page">
+	<div class="wrap-container zerogrid">
+		<div class="crumbs">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+			</ul>
+		</div>
+
+
+		
+		<header>
+            <h1>Shopping Cart</h1>
+            <div class="shopping">
+                <img src="images/shopping.svg">
+                <span class="quantity">0</span>
+            </div>
+    </header>
+
+<div class="card">
+	<h1>Card</h1>
+	<div class="scroller">
+		<ul class="listCard"></ul>
+		<div>_________________________________________________________________________________________________________</div>
+		<button style="width: 100%;"><div class="total">Total Price : 0</div></button>
+	</div>
+		<div class="checkOut">
+			<a href="popupForm.html" style="text-decoration: none;">
+  <button style="font-weight: 800;width: 100%;height: 70px;color: rgba(0,0,0,1.0);background-color: #ecf40b;text-align:center;">
+    Check Out
+  </button>
+</a>
+      <a href="menu.html"><div class="closeShopping">Close</div></a>
+    </div>
+  </div>
+  
+
+
+
+
+			<div class="wrap-content">
+				<div class="row">
+					<div class="col-1-3">
+						<div class="wrap-col">
+							<h3><i>Pizza</i></h3>
+							<h>-------------</h>
+							<div class="post">
+								<img class="zoom-effect" src="images/pizza.jpg" />
+								<div class="wrapper">
+									<h5><u><a href="menu1.html">Margherita</a></u></h5>
+									<span>Price:149TK</span>
+								</div>
+								<div class="action">
+									<button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                </div>
+                            </div>
+							<div class="post">
+								<img class="zoom-effect" src="images/pizza1.jpg" />
+								<div class="wrapper">
+								  <h5><u><a href="menu2.html">Capricciosa</a></u></h5>
+								   <span>Price:450TK</span>
+								  </div>
+								  <div class="action">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                  </div>
+							</div>
+							<div class="post">
+								<img class="zoom-effect" src="images/pizza2.jpg" />
+								<div class="wrapper">
+								  <h5><u><a href="menu3.html">Bella Italia</a></u></h5>
+								   <span>Price:980TK</span>
+								  </div>
+								  <div class="action">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                  </div>
+							</div>
+							<div class="post">
+								<img class="zoom-effect" src="images/pizza3.jpg"/>
+								<div class="wrapper">
+								  <h5><u><a href="menu4.html">Diavola</a></u></h5>
+								  <span>Price:599TK</span>
+								</div>
+								<div class="action">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                  </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-1-3">
+						<div class="wrap-col">
+							<h3><i>Pasta</i></h3>
+							<h>-------------</h>
+							<div class="post">
+								<img class="zoom-effect" src="images/pasta.jpg"/>
+								<div class="wrapper">
+								  <h5><u><a href="menu5.html">Quick sausage bolognese</a></u></h5>
+								   <span>Price:700TK</span>
+								</div>
+								<div class="action">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                  </div>
+							</div>
+							<div class="post">
+								<img class="zoom-effect" src="images/pasta2.png"/>
+								<div class="wrapper">
+								  <h5><u><a href="menu6.html">Chicken lasagne</a></u></h5>
+								  <span>Price:500TK</span>
+								</div>
+								<div class="action">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                  </div>
+							</div>
+							<div class="post">
+								<img class="zoom-effect" src="images/pasta3.jpg"/>
+								<div class="wrapper">
+								  <h5><u><a href="menu7.html">Spinach and ricotta lasagne </a></u></h5>
+								  <span>Price:450TK</span>
+								</div>
+								<div class="action">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                  </div>
+							</div>
+							<div class="post">
+							<img class="zoom-effect" src="images/pasta4.jpg"/>
+								<div class="wrapper">
+								  <h5><u><a href="menu8.html">Creamy courgette lasagne</a></u>></h5>
+								  <span>Price:980TK</span>
+								</div>
+								<div class="action">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                  </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-1-3">
+						<div class="wrap-col">
+							<h3><i>Vegitarian</i></h3>
+							<h>--------------------</h>
+							<div class="post">
+								<img class="zoom-effect" src="images/vegi1.jpg"/>
+								<div class="wrapper">
+								  <h5><u><a href="menu9.html">Slow cooker vegetable</a></u></h5>
+								  <span>Price:400TK</span>
+								</div>
+								<div class="action">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                  </div>
+							</div>
+							<div class="post">
+								<img class="zoom-effect" src="images/vegi2.jpg"/>
+								<div class="wrapper">
+								  <h5><u><a href="menu10.html">Mushroom bourguignon pithivier</a><u></h5>
+								  <span>Price:720TK</span>
+								</div>
+								<div class="action">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                  </div>
+							</div>
+							<div class="post">
+							<img class="zoom-effect" src="images/vegi3.jpg"/>
+								<div class="wrapper">
+								  <h5><u><a href="menu11.html">potato cakes with poached eggs</a></u></h5>
+								  <span>Price:660TK</span>
+								</div>
+								<div class="action">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                  </div>
+							</div>
+							<div class="post">
+							<img class="zoom-effect" src="images/vegi4.jpg"/>
+								<div class="wrapper">
+								  <h5><u><a href="menu12.html">Bean & halloumi stew</a></u></h5>
+								  <span>Price:550TK</span>
+								</div>
+								<div class="action">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col-1-3">
+						<div class="wrap-col">
+							<h3><i>Sauce</i></h3>
+							<h>--------------------</h>
+							<div class="post">
+								<img class="zoom-effect"  src="images/Sauce.jpg"/>
+								<div class="wrapper">
+								  <h5><a href="#">Pesto alla Genovese</a></h5>
+								   <span>200TK</span>
+								</div>
+								<div class="action">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                  </div>
+							</div>
+							<div class="post">
+								<img class="zoom-effect" src="images/sauce1.jpg"/>
+								<div class="wrapper">
+								  <h5><a href="#">Marinara Sauce</a></h5>
+								  <span>250TK</span>
+								</div>
+								<div class="action">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                  </div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-1-3">
+						<div class="wrap-col">
+							<h3><i>Chow mein</i></h3>
+							<h>--------------------</h>
+							<div class="post">
+								<img class="zoom-effect" src="images/chowmin1.jpg"/>
+								<div class="wrapper">
+								  <h5><a href="#">Amatriciana Bucatini</a></h5>
+								  <span>250Tk</span>
+								</div>
+								<div class="action">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                  </div>
+							</div>
+							<div class="post">
+								<img class="zoom-effect" src="images/chowmin.jpg"/>
+								<div class="wrapper">
+								  <h5><a href="#">Chicken Chow Mein</a></h5>
+								   <span>300TK</span>
+								</div>
+								<div class="action">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                  </div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-1-3">
+						<div class="wrap-col">
+								<h3><i>Ice Cream</i></h3>
+							<h>--------------------</h>
+							<div class="post">
+								<img class="zoom-effect" src="images/icecreame1.jpg"/>
+								<div class="wrapper">
+								  <h5><a href="#">Gelato cioccolato fondente</a></h5>
+								   <span>180TK</span>
+								</div>
+								<div class="action">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                  </div>
+							</div>
+							<div class="post">
+								<img class="zoom-effect"src="images/icecreame.jpg"/>
+								<div class="wrapper">
+								  <h5><a href="#">Gelato alla nocciola</a></h5>
+								   <span>150TK</span>
+								</div>
+								<div class="action">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                                  </div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+	</div>
+</section>
+
+<!--////////////////////////////////////Footer-->
+<br></br>
+<footer class="zerogrid">
+	<div class="wrap-footer">
+		<div class="row">
+			<div class="col-1-3">
+				<div class="wrap-col">
+					<h4>Customer Testimonials</h4>
+					<div class="row">
+						<img src="images/a-1.jpg">
+						<h5>Nick Roach</h5>
+						<p>Pellentesque elementum leo et justo dapibus convalli. In justo nibh, congue nec dapibus ac, placerat eget sem. Nunc consequat felis non elit ultricies in varius massa laoreet. Aenean lectus nisl, ellentesque in fermentum sit amet, convallis a lorem condimentum mollis. Aenean lectus nisl, ellentesque in fermentum sit amet.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="wrap-col">
+					<h4>Location</h4>
+					<div class="wrap-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.289259162295!2d-120.7989351!3d37.5246781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8091042b3386acd7%3A0x3b4a4cedc60363dd!2sMain+St%2C+Denair%2C+CA+95316%2C+Hoa+K%E1%BB%B3!5e0!3m2!1svi!2s!4v1434016649434" width="100%" height="200" frameborder="0" style="border:0"></iframe></div>
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="wrap-col">
+					<h4>Open Daily</h4>
+					<p><span>mon.</span> 17:00 - 21:00</p>
+					<p><span>tue.-wed.</span> 16:30 – 21:00</p>
+					<p><span>thu.-sat.</span> 16:30 – 21:00</p>
+					<p><span>sun.</span> 11:00 – 21:00</p>
+					<p><span>Need help getting home?</span></br>
+					We will call a cab for you!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<div class="wrapper">
+			Copyright 2015 - Designed by <a href="https://www.zerotheme.com" title="free website templates">Israt Jahan</a>
+			<ul class="quick-link f-right">
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms of Use</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+<div id="overlay">
+  <div id="popup-image">
+    <span id="close-btn" onclick="closePopup()">&times;</span>
+    <img src="images/offer2.jpg" alt="Popup Image">
+  </div>
+</div>
+
+
+
+<script>
+  // Function to show the overlay and pop-up image
+  function showPopup() {
+    document.getElementById('overlay').style.display = 'flex';
+  }
+
+  // Function to close the overlay and pop-up image
+  function closePopup() {
+    document.getElementById('overlay').style.display = 'none';
+  }
+
+  // Event listener to trigger the showPopup function after a delay of 2000 milliseconds (2 seconds)
+  setTimeout(showPopup, 1000);
+</script>
+
+	<!-- js -->
+	<script src="js/classie.js"></script>
+	<script src="js/demo.js"></script>
+	<script src="js/menu.js"></script>
+	
+</div>
+</body>
+</html>

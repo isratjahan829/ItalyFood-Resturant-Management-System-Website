@@ -1,0 +1,9 @@
+body {
+    background-image: url('images/backgroung.jpg');
+    background-size: cover; /* This ensures the background image covers the entire screen */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+P{
+    padding: 8px;
+}

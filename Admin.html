@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/adminHub.css">
+
+	<title>AdminHub</title>
+
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">AdminHub</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="Admin.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="staff-admin.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Staff</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Analytics</span>
+				</a>
+			</li>
+			<li>
+				<a href="userlist.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text" id="order-list">User List</span>
+				</a>
+			</li>
+			
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="popupForm.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="images/admin.jpg">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="Admin.html">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Download PDF</span>
+				</a>
+			</div>
+			<ul>
+				<h1>Simple CSS Bar Chart</h1>
+<div class="simple-bar-chart">
+  
+  <div class="item" style="color: black; --clr: #5EB344; --val: 80;">
+    <div class="label">Label 1</div>
+    <div class="value">80%</div>
+  </div>
+  
+  <div class="item" style="color: black; --clr: #FCB72A; --val: 50">
+    <div class="label">Label 2</div>
+    <div class="value">50%</div>
+  </div>
+  
+  <div class="item" style="color: black; --clr: #F8821A; --val: 100">
+    <div class="label">Label 3</div>
+    <div class="value">100%</div>
+  </div>
+  
+  <div class="item" style="color: black; --clr: #E0393E; --val: 15">
+    <div class="label">Label 4</div>
+    <div class="value">15%</div>
+  </div>
+  
+  <div class="item" style="color: black; --clr: #963D97; --val: 1">
+    <div class="label">Label 5</div>
+    <div class="value">3%</div>
+  </div>
+  
+  <div class="item" style="color: black; --clr: #069CDB; --val: 90">
+    <div class="label">Label 6</div>
+    <div class="value">90%</div>
+  </div>
+</div>
+<!-- partial -->
+			</ul>
+
+			<ul class="box-info">
+				<div><figure class="c-graph">
+  <figcaption class="c-graph__title">Do you use spaCy at work?</figcaption>
+  <svg class="chart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="520" role="img" viewBox="0 0 #{width} #{height}" preserveAspectRatio="xMinYMin meet">
+    <defs>
+      <pattern id="pattern" patternUnits="userSpaceOnUse" width="10" height="10">
+        <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCI+ICA8cmVjdCB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIGZpbGw9IiMxRTE5MzUiLz4gIDxwYXRoIGQ9Ik0tMSwxIGwyLC0yICAgICAgICAgICBNMCwxMCBsMTAsLTEwICAgICAgICAgICBNOSwxMSBsMiwtMiIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEuNSIvPjwvc3ZnPg==" x="0" y="0" width="10" height="10"></image>
+      </pattern>
+    </defs>
+    <text class="c-graph__label" x="0" y="40">Yes, we use it in production.</text>
+    <g class="c-graph__value">
+      <rect class="c-graph__bar" width="160" height="30" y="50" fill="#1e1935"></rect>
+      <text class="c-graph__number c-graph__number--value" x="170" y="50" dy="22.22222222222222"> 20%
+      </text>
+    </g>
+    <g class="c-graph__segment">
+      <rect class="c-graph__bar" width="144" height="30" y="50" fill="url(#pattern)"></rect>
+      <text class="c-graph__number" x="10" y="50" dy="22.22222222222222"> 18%
+      </text>
+    </g>
+    <text class="c-graph__label" x="0" y="120">Yes, we use it in development.</text>
+    <g class="c-graph__value">
+      <rect class="c-graph__bar" width="104" height="30" y="130" fill="#1e1935"></rect>
+      <text class="c-graph__number c-graph__number--value" x="114" y="130" dy="22.22222222222222"> 13%
+      </text>
+    </g>
+    <g class="c-graph__segment">
+      <rect class="c-graph__bar" width="96" height="30" y="130" fill="url(#pattern)"></rect>
+      <text class="c-graph__number" x="10" y="130" dy="22.22222222222222"> 12%
+      </text>
+    </g>
+    <text class="c-graph__label" x="0" y="200">Yes, we use it for research.</text>
+    <g class="c-graph__value">
+      <rect class="c-graph__bar" width="248" height="30" y="210" fill="#1e1935"></rect>
+      <text class="c-graph__number c-graph__number--value" x="258" y="210" dy="22.22222222222222"> 31%
+      </text>
+    </g>
+    <g class="c-graph__segment">
+      <rect class="c-graph__bar" width="144" height="30" y="210" fill="url(#pattern)"></rect>
+      <text class="c-graph__number" x="10" y="210" dy="22.22222222222222"> 18%
+      </text>
+    </g>
+    <text class="c-graph__label" x="0" y="280">No, but we're planning to.</text>
+    <g class="c-graph__value">
+      <rect class="c-graph__bar" width="136" height="30" y="290" fill="#1e1935"></rect>
+      <text class="c-graph__number c-graph__number--value" x="146" y="290" dy="22.22222222222222"> 17%
+      </text>
+    </g>
+    <g class="c-graph__segment">
+      <rect class="c-graph__bar" width="112" height="30" y="290" fill="url(#pattern)"></rect>
+      <text class="c-graph__number" x="10" y="290" dy="22.22222222222222"> 14%
+      </text>
+    </g>
+    <text class="c-graph__label" x="0" y="360">No, and we're currently not planning to.</text>
+    <g class="c-graph__value">
+      <rect class="c-graph__bar" width="112" height="30" y="370" fill="#1e1935"></rect>
+      <text class="c-graph__number c-graph__number--value" x="122" y="370" dy="22.22222222222222"> 14%
+      </text>
+    </g>
+    <g class="c-graph__segment">
+      <rect class="c-graph__bar" width="112" height="30" y="370" fill="url(#pattern)"></rect>
+      <text class="c-graph__number" x="10" y="370" dy="22.22222222222222"> 14%
+      </text>
+    </g>
+    <g class="c-graph__footer" x="0" y="500" height="20" dy="10">
+      <rect class="c-graph__legend-value" y="460" width="20" height="20" fill="#1e1935"></rect>
+      <text x="30" y="460" dy="1em">everyone</text>
+      <rect class="c-graph__legend-segment" y="490" width="20" height="20" fill="url(#pattern)"></rect>
+      <text x="30" y="490" dy="1em">non-researchers</text>
+    </g>
+  </svg>
+</figure></div>
+				<div><div class="main-container">
+		<div class="year-stats">
+			<div class="month-group">
+				<div class="bar h-100"></div>
+				<p class="month">Jan</p>
+			</div>
+			<div class="month-group">
+				<div class="bar h-50"></div>
+				<p class="month">Feb</p>
+			</div>
+			<div class="month-group">
+				<div class="bar h-75"></div>
+				<p class="month">Mar</p>
+			</div>
+			<div class="month-group">
+				<div class="bar h-25"></div>
+				<p class="month">Apr</p>
+			</div>
+			<div class="month-group selected">
+				<div class="bar h-100"></div>
+				<p class="month">May</p>
+			</div>
+			<div class="month-group">
+				<div class="bar h-50"></div>
+				<p class="month">Jun</p>
+			</div>
+			<div class="month-group">
+				<div class="bar h-75"></div>
+				<p class="month">Jul</p>
+			</div>
+			<div class="month-group">
+				<div class="bar h-25"></div>
+				<p class="month">Aug</p>
+			</div>
+			<div class="month-group">
+				<div class="bar h-50"></div>
+				<p class="month">Sep</p>
+			</div>
+			<div class="month-group">
+				<div class="bar h-75"></div>
+				<p class="month">Oct</p>
+			</div>
+			<div class="month-group">
+				<div class="bar h-25"></div>
+				<p class="month">Nov</p>
+			</div>
+			<div class="month-group">
+				<div class="bar h-100"></div>
+				<p class="month">Dez</p>
+			</div>
+		</div>
+
+		<div class="stats-info">
+			<div class="graph-container">
+				<div class="percent">
+					<svg viewBox="0 0 36 36" class="circular-chart">
+						<path class="circle" stroke-dasharray="100, 100" d="M18 2.0845
+      a 15.9155 15.9155 0 0 1 0 31.831
+      a 15.9155 15.9155 0 0 1 0 -31.831" />
+						<path class="circle" stroke-dasharray="85, 100" d="M18 2.0845
+      a 15.9155 15.9155 0 0 1 0 31.831
+      a 15.9155 15.9155 0 0 1 0 -31.831" />
+						<path class="circle" stroke-dasharray="60, 100" d="M18 2.0845
+      a 15.9155 15.9155 0 0 1 0 31.831
+      a 15.9155 15.9155 0 0 1 0 -31.831" />
+						<path class="circle" stroke-dasharray="30, 100" d="M18 2.0845
+      a 15.9155 15.9155 0 0 1 0 31.831
+      a 15.9155 15.9155 0 0 1 0 -31.831" />
+					</svg>
+				</div>
+				<p>Total: $2075</p>
+			</div>
+
+			<div class="info">
+				<p>Most expensive category <br /><span>Restaurants & Dining</span></p>
+				<p>Updated categories <span>2</span></p>
+				<p>Bonus payments <span>$92</span></p>
+			</div>
+		</div>
+	</div></div>
+			
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Recent Login</h3>
+						<i class='bx bx-search' ></i>
+					</div>
+					<table>
+					
+							<a href="menu.html"><img src="images/card.jpg" style="width:100%"></div></i></a>
+					</table>
+				</div>
+				<div class="todo">
+					<div class="head">
+						<h3>List</h3>
+						<i class='bx bx-plus' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<ul class="todo-list">
+						
+						<li class="completed">
+							<p>Menu</p>
+							<a href="index.html"><i class='bx bx-dots-vertical-rounded' ></i></a>
+						</li>
+						<li class="not-completed">
+							<p>Blog</p>
+							<a href="archive.html"><i class='bx bx-dots-vertical-rounded' ></i></a>
+						</li>
+						<li class="completed">
+							<p>Our Staff</p>
+							<a href="index.html"><i class='bx bx-dots-vertical-rounded' ></i></a>
+						</li>
+						<li class="not-completed">
+							<p>News</p>
+							<a href="news.html"><i class='bx bx-dots-vertical-rounded' ></i>
+						</li></a>
+						<li class="not-completed">
+							<p>Gallery</p>
+							<a href="gallery.html"><i class='bx bx-dots-vertical-rounded' ></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="js/user.js"></script>
+	<script>
+		
+		document.getElementById("user-list").addEventListener('click', function() {
+    console.log(users);
+});
+
+
+
+	</script>
+</body>
+</html>

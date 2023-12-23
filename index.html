@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+
+    <!-- Basic Page Needs-->
+	<meta charset="utf-8">
+	<title>ItalyFood |Restaurant Website</title>
+
+    <!-- Mobile Specific Metas-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS-->
+  <link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slide.css">
+	<link rel="stylesheet" href="css/menu.css">
+	
+
+	<!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <style>
+  	body {
+    background-image: url('images/Qizz-pic.jpg');
+    background-size: cover; /* This ensures the background image covers the entire screen */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+  	.dropbtn {
+  background-color: #b72112;
+  color: white;
+  padding: 11px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* Styling for the overlay */
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the pop-up image */
+#popup-image {
+  max-width: 80%;
+  max-height: 80%;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  box-shadow: 2vw 2vw 12vw 3vw #ccc;
+  position: relative;
+}
+
+/* Styling for the close button */
+#close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+/* Additional styling for the popup content */
+#popup-image img {
+      width: 699px;
+    height: 500px;
+    object-fit: fill;
+}
+
+
+  </style>
+  
+</head>
+<body>
+<div class="wrap-body">
+
+	<!--Top-->
+	<div class="top">
+		<div class="zerogrid">
+			<ul class="number f-left">
+				<li class="mail"><p>ContacUs:  italyFood123@Gmail.com</p></li>
+				<li class="phone"><p>0888000888</p></li>
+			</ul>
+
+			<ul class="top-social f-right">
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				 <div class="dropdown">
+				 	<button class="dropbtn"><i class="fa fa-user"></i> LOGIN</button>
+				 	<div class="dropdown-content">
+				 		<a href="adminlogin.html">Admin</a>
+				 		<a href="popupForm.html">User</a>
+				 	</div>
+				 </div>
+			</ul>
+		</div>
+	</div>
+
+	<!--Header-->
+	<header>
+		<div class="zerogrid">
+			<center><div class="logo"><img src="images/logo.png"></div></center>
+		</div>
+	</header>
+	<div class="site-title">
+		<div class="zerogrid">
+			<div class="row">
+				<h2 class="t-center">Truely the best restaurant in town - The Bangladesh Times</h2>
+		
+			</div>
+		</div>
+	</div>
+
+    <!--Menu-->
+    <a href="#" class="nav-toggle">Toggle Navigation</a>
+    <nav class="cmn-tile-nav">
+		<ul class="clearfix">
+			<li class="colour-1"><a href="index.html">Home</a></li>
+			<li class="colour-2"><a href="menu.html">Menu</a></li>
+			<li class="colour-4"><a href="archive.html">Blog</a></li>
+			<li class="colour-6"><a href="staff.html">CHRFS</a></li>
+			<li class="colour-7"><a href="Recepis.html">Recipes</a></li>
+			<li class="colour-3"><a href="hygin.html">Hygine Maintainence</a></li>
+			<li class="colour-3"><a href="location.html">Location</a></li>
+			<li class="colour-8"><a href="gallery.html">Gallery</a></li>
+		</ul>
+    </nav>
+	<br></br>
+
+	<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+   <img src="images/pasta2.png" style="width: 100%; height: 600px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/pizza1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/pizza3.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/pasta4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/vegi3.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/vegi4.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+     <p>ghkjgf asshuye ahgfiaeggf hjayuag hjagygi ajsgh</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/pasta2.png" style="width:100%; height: 107px;" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/pizza1.jpg" style="width:100%; height: 107px;" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/pizza3.jpg" style="width:100%; height: 107px;" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/pasta4.jpg" style="width:100%; height: 107px;" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/vegi3.jpg" style="width:100%; height: 107px;" onclick="currentSlide(5)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/vegi4.jpg" style="width:100%; height: 107px;" onclick="currentSlide(6)">
+    </div>
+  </div>
+</div>
+			<br></br>
+<!--////////////////////////////////////Container-->
+<section id="container" class="index-page">
+	<div class="wrap-container zerogrid">
+		<!-----------------content-box-1-------------------->
+		<section class="content-box box-1">
+			<div class="zerogrid">
+				<div class="row box-item"><!--Start Box-->
+					<h2>“Your awesome company slogan goes here, we have the best food around”</h2>
+					<span>Unc elementum lacus in gravida pellentesque urna dolor eleifend felis eleifend</span>
+				</div>
+			</div>
+		</section>
+		<!-----------------content-box-2-------------------->
+		<section class="content-box box-2">
+			<div class="zerogrid">
+				<div class="row wrap-box"><!--Start Box-->
+					<div class="header">
+						<h2>Welcome To Our Restaurant</h2>
+						<hr class="line">
+						
+					</div>
+					<div class="row">
+						<div class="col-1-3">
+							<div class="wrap-col">
+								<div class="box-item">
+									<span class="ribbon">Menu Card<b></b></span>
+									<img src="images/menu.jpg" alt="">
+									<p>Welcome to our exquisite menu! Our culinary team has carefully crafted a diverse selection of dishes to delight your palate.We offer a culinary journey that celebrates the finest ingredients and flavors!</p>
+									<a href="file:///D:/DECSTOP/Photoshop/Web%20Development%20Vedio/Day31/zItalyFood/menu.html" class="button button-1">Detail</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-1-3">
+							<div class="wrap-col">
+								<div class="box-item">
+									<span class="ribbon">Blog<b></b></span>
+									<img src="images/fast-food.jpg" alt="">
+									<p>Welcome to our ItalyFood Blog, where we embark on a delectable journey through the heart of Italian cuisine.We offers a symphony of flavors that captivate the senses and leave an indelible mark on every traveler's palate!</p>
+									<a href="file:///D:/DECSTOP/Photoshop/Web%20Development%20Vedio/Day31/zItalyFood/archive.html" class="button button-1">Detail</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-1-3">
+							<div class="wrap-col">
+								<div class="box-item">
+									<span class="ribbon">Reservation<b></b></span>
+									<img src="images/reservation.jpg" alt="">
+									<p>The sliding menucard will surely impress your customers! Set up several pages and display them side by side, just as on a paper menucard!</p>
+									<a href="#" class="button button-1">Detail</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-1-3">
+							<div class="wrap-col">
+								<div class="box-item">
+									<span class="ribbon">Chef<b></b></span>
+									<img src="images/chef.jpg" alt="">
+									<p>The sliding menucard will surely impress your customers! Set up several pages and display them side by side, just as on a paper menucard!</p>
+									<a href="#" class="button button-1">Detail</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-1-3">
+							<div class="wrap-col">
+								<div class="box-item">
+									<span class="ribbon">Preview<b></b></span>
+									<img src="images/preview.jpg" alt="">
+									<p>The sliding menucard will surely impress your customers! Set up several pages and display them side by side, just as on a paper menucard!</p>
+									<a href="#" class="button button-1">Detail</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-1-3">
+							<div class="wrap-col">
+								<div class="box-item">
+									<span class="ribbon">Text Heading<b></b></span>
+									<img src="images/reservation.jpg" alt="">
+									<p>The sliding menucard will surely impress your customers! Set up several pages and display them side by side, just as on a paper menucard!</p>
+									<a href="#" class="button button-1">Detail</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</section>
+<header>
+	<button class="material-scrolltop" type="button">
+  <span>↑</span>
+</button>
+
+
+<!--////////////////////////////////////Footer-->
+<footer class="zerogrid">
+	<div class="wrap-footer">
+		<div class="row">
+			<div class="col-1-3">
+				<div class="wrap-col">
+					<h4>Customer Testimonials</h4>
+					<div class="row">
+						<img src="images/a-1.jpg">
+						<h5>Nick Roach</h5>
+						<p>Pellentesque elementum leo et justo dapibus convalli. In justo nibh, congue nec dapibus ac, placerat eget sem. Nunc consequat felis non elit ultricies in varius massa laoreet. Aenean lectus nisl, ellentesque in fermentum sit amet, convallis a lorem condimentum mollis. Aenean lectus nisl, ellentesque in fermentum sit amet.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="wrap-col">
+					<h4>Location</h4>
+					<div class="wrap-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.289259162295!2d-120.7989351!3d37.5246781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8091042b3386acd7%3A0x3b4a4cedc60363dd!2sMain+St%2C+Denair%2C+CA+95316%2C+Hoa+K%E1%BB%B3!5e0!3m2!1svi!2s!4v1434016649434" width="100%" height="200" frameborder="0" style="border:0"></iframe></div>
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="wrap-col">
+					<h4>Open Daily</h4>
+					<p><span>mon.</span> 17:00 - 21:00</p>
+					<p><span>tue.-wed.</span> 16:30 – 21:00</p>
+					<p><span>thu.-sat.</span> 16:30 – 21:00</p>
+					<p><span>sun.</span> 11:00 – 21:00</p>
+					<p><span>Need help getting home?</span></br>
+					We will call a cab for you!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<div class="wrapper">
+			Copyright 2023 - Designed by Israt Jahan</a>
+			<ul class="quick-link f-right">
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms of Use</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+<div id="overlay">
+  <div id="popup-image">
+    <span id="close-btn" onclick="closePopup()">&times;</span>
+    <img src="images/offer3.png" alt="Popup Image">
+  </div>
+</div>
+
+
+
+
+	<!-- js -->
+	<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+// Function to show the overlay and pop-up image
+  function showPopup() {
+    document.getElementById('overlay').style.display = 'flex';
+  }
+
+  // Function to close the overlay and pop-up image
+  function closePopup() {
+    document.getElementById('overlay').style.display = 'none';
+  }
+
+  // Event listener to trigger the showPopup function after a delay of 2000 milliseconds (2 seconds)
+  setTimeout(showPopup, 1000);
+
+
+</script>
+
+	
+</div>
+</body></html>
